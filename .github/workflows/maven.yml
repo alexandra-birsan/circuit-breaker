@@ -26,4 +26,4 @@ jobs:
       # uses: axel-op/googlejavaformat-action@d4a4c91b6e34fc80edbba7a029651e8951b44f91
       uses: axel-op/googlejavaformat-action@3.5.0
       with:
-        commit-message: Formmatting automatically applied
+        commitMessage: Formmatting automatically applied
