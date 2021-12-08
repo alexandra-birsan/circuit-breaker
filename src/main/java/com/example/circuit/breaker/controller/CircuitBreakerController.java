@@ -8,7 +8,7 @@ import reactor.core.publisher.Mono;
 public class CircuitBreakerController {
 
     @GetMapping(value = "/hello")
-    private Mono<String> sayHello(){
+    private Mono<String> sayHello() {
         return Mono.just("Hi, I'm Alex!");
     }
 }
