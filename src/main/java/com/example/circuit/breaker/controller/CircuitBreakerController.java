@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CircuitBreakerController {
 
-    private final AlbumService albumService;
+  private final AlbumService albumService;
 
-    public CircuitBreakerController(AlbumService albumService) {
-        this.albumService = albumService;
-    }
+  public CircuitBreakerController(AlbumService albumService) {
+    this.albumService = albumService;
+  }
 
-    @GetMapping(value = "/albums")
-    private String getAlbums() {
-        return albumService.getAlbums();
-    }
+  @GetMapping(value = "/albums")
+  private String getAlbums() {
+    return albumService.getAlbums();
+  }
 }
